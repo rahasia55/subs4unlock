@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subs4Unlock.Net - Layanan Berlangganan untuk Membuka Gratis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">S</div>
+                    <div class="logo-text">SUBS4UNLOCK<span class="red">.NET</span></div>
+                </div>
+                <button class="hamburger">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="create-section">
+                <h1 class="create-title">Buat Tautan di Sini</h1>
+                
+                <div class="action-buttons">
+                    <button class="action-btn youtube-subscribe" data-action="subscribe">
+                        <span class="icon youtube-icon"></span>
+                        Berlangganan
+                    </button>
+                    <button class="action-btn youtube-like" data-action="like">
+                        <span class="icon youtube-icon"></span>
+                        Suka Video
+                    </button>
+                    <button class="action-btn youtube-second" data-action="second">
+                        <span class="icon youtube-icon"></span>
+                        Saluran Kedua
+                    </button>
+                    <button class="action-btn discord-join" data-action="discord">
+                        <span class="icon discord-icon"></span>
+                        Gabung Discord
+                    </button>
+                    <button class="action-btn instagram-follow" data-action="ig-follow">
+                        <span class="icon instagram-icon"></span>
+                        Ikuti Instagram
+                    </button>
+                    <button class="action-btn instagram-like" data-action="ig-like">
+                        <span class="icon instagram-icon"></span>
+                        Suka Postingan Instagram
+                    </button>
+                    <button class="action-btn facebook-follow" data-action="fb-follow">
+                        <span class="icon facebook-icon"></span>
+                        Ikuti Facebook
+                    </button>
+                    <button class="action-btn telegram-join" data-action="telegram">
+                        <span class="icon telegram-icon"></span>
+                        Gabung Telegram
+                    </button>
+                    <button class="action-btn website-visit" data-action="website">
+                        <span class="icon globe-icon"></span>
+                        Kunjungi Website
+                    </button>
+                </div>
+
+                <div class="form-group" id="subscribe-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Saluran YouTube untuk Berlangganan">
+                </div>
+                <div class="form-group" id="like-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Video untuk Disukai">
+                </div>
+                <div class="form-group" id="second-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Saluran Kedua">
+                </div>
+                <div class="form-group" id="discord-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Server Discord">
+                </div>
+                <div class="form-group" id="ig-follow-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Profil Instagram">
+                </div>
+                <div class="form-group" id="ig-like-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Postingan Instagram">
+                </div>
+                <div class="form-group" id="fb-follow-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Halaman Facebook">
+                </div>
+                <div class="form-group" id="telegram-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Saluran Telegram">
+                </div>
+                <div class="form-group" id="website-input" style="display: none;">
+                    <input type="url" class="form-input" placeholder="Masukkan URL Website untuk Dikunjungi">
+                </div>
+                    
+                <div class="form-inputs">
+                    <div class="form-group">
+                        <input type="url" class="form-input" id="main-url" placeholder="Masukkan Tautan URL untuk Dikunci" required>
+                    </div>
+                </div>
+                <button class="generate-btn">Buat Tautan</button>
+
+                <div class="result-section" id="result-section">
+                    <div class="result-title">🎉 Tautan Buka Kunci Anda Siap!</div>
+                    <div class="result-link" id="generated-link"></div>
+                    <div style="text-align: center;">
+                        <button class="copy-btn" onclick="copyLink()">📋 Salin Tautan</button>
+                    </div>
+                </div>
+
+                <div class="warning-alert">
+                    <div class="warning-icon">⚠️</div>
+                    <div class="warning-text">
+                        Waspada terhadap situs duplikat dan palsu yang menggunakan nama Subs4Unlock, mereka dapat mencuri data Anda.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
